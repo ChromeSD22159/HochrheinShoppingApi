@@ -9,7 +9,9 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    configureDI(ENV.Development)
+    val env = ENV.Development
+
+    configureDI(env)
     configureSerialization()
     configureDatabases()
     configureMonitoring()
