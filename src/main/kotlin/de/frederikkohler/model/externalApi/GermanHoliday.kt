@@ -1,7 +1,6 @@
-package de.frederikkohler.model
+package de.frederikkohler.model.externalApi
 
 import kotlinx.serialization.Serializable
-import java.time.LocalDate
 
 @Serializable
 data class GermanHolidaysResponse(

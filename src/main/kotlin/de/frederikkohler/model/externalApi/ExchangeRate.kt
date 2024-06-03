@@ -1,4 +1,4 @@
-package de.frederikkohler.model
+package de.frederikkohler.model.externalApi
 
 import kotlinx.serialization.Serializable
 
@@ -17,5 +17,4 @@ data class Result(
     val quantity: Double,
     val amount: Double
 )
-
 

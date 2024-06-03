@@ -1,5 +1,6 @@
 package de.frederikkohler.plugins
 
+import de.frederikkohler.model.CurrencyExchangeRates
 import de.frederikkohler.services.DatabasesManager
 import de.frederikkohler.services.EnvManager
 import io.ktor.server.application.*
@@ -24,7 +25,9 @@ fun Application.configureDatabases(
     }
 
     transaction(db){
-        SchemaUtils //.create()
+        SchemaUtils.create(
+            CurrencyExchangeRates
+        )
 
         launch(Dispatchers.IO) {
             DatabasesManager(

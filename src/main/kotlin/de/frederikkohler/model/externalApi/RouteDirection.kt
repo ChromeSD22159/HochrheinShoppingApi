@@ -1,4 +1,4 @@
-package de.frederikkohler.model
+package de.frederikkohler.model.externalApi
 
 import kotlinx.serialization.Serializable
 
